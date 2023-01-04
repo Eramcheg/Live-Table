@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from realtystateapp.views import index_page
+from realtystateapp.views import IndexView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index_page)
+    path('', IndexView.as_view())
 ]

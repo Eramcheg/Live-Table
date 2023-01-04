@@ -15,7 +15,16 @@
     		<div class="card-header"><b>Select Excel File</b></div>
     		<div class="card-body">
 
-                <input type="file" id="excel_file" />
+                <!--<input type="file" id="excel_file" />
+				<form action="/" method="post" id="excel_file">
+					{% csrf_token %}
+					{{ fileform }}
+					<input type="submit" value="Select">
+				</form>_-->
+				<form  name="fileform" action="/" method="post" id="excel_file">
+					<input type="file"/>
+					<input type="submit" value="a"/>
+				</form>
 
     		</div>
 
